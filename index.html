@@ -4,6 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <title>happy new year 2020</title>
+    <audio autoplay="autopaly" loop="loop" id="audios">
+        <source src="HappyNewYear.mp3" type="audio/mp3" />
+    </audio>
+    <script>
+        // 将以下代码添加到js入口函数内即可
+        document.addEventListener('touchstart', function () {
+            document.getElementById('audios').play()
+        })
+    </script>
     <link rel='stylesheet' href='css/bootstrap.min.css'>
     <link rel="stylesheet" href="css/style.css">
 
@@ -926,14 +935,10 @@
 
         </div>
     </div>
-    <audio autoplay="autopaly" loop="loop" controls="controls" id="audios">
-        <source src="HappyNewYear.mp3" type="audio/mp3" />
-    </audio>
+
     <script src='js/anime.min.js'></script>
     <script src='js/popmotion.global.min.js'></script>
     <script src="js/script.js"></script>
-    <script src="js/bgm.js"></script>
-
 
 </body>
 
